@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->init();
+    this->on_actionAbout_triggered();
 }
 
 MainWindow::~MainWindow()
@@ -146,7 +147,12 @@ void MainWindow::on_plotter_clicked()
 
 void MainWindow::on_btgraph_clicked()
 {
-    this->plot.start(this->settings.value("Plotter").value<QString>()+QString(" -p nada -200 200 0.1"));
+    QString fx=this->ui->fx->text().toUpper();
+    fx=reemplazarVars(fx);
+    this->plot.start(this->settings.value("Plotter").value<QString>()+QString(" -p "+fx+"  "+
+                                                                              this->ui->min->text()+" "+
+                                                                              this->ui->max->text()+" "+
+                                                                              this->ui->dx->text()));
 }
 
 
@@ -163,7 +169,6 @@ void MainWindow::init()
     nivel.nivel=0;
     nivel.operadores.push_back("(");
     nivel.operadores.push_back(")");
-    qDebug()<<nivel.operadores.count();
     this->jerarquiaOperadores.push_back(nivel);
 
     nivel.operadores.clear();
@@ -363,8 +368,8 @@ void MainWindow::metodoChancho()
     }
 
     this->ui->expression->clear();//esto muestra la evaluacion postfija
-    for(int k=this->postfijo.count()-1;k>=0;k--)
-        this->ui->expression->setText(this->ui->expression->text().append(postfijo.at(k)+" "));
+    //for(int k=this->postfijo.count()-1;k>=0;k--)
+      //  this->ui->expression->setText(this->ui->expression->text().append(postfijo.at(k)+" "));
 
     QString res=QString::number(this->evaluarPostFijo(postfijo));
 
@@ -445,3 +450,14 @@ QString MainWindow::reemplazarVars(QString p)
 
 
 
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QMessageBox::about(this,"About",
+                       "Aplicacion creada por Néstor A. Bermúdez.\n\nProyecto de Estructura de Datos\n"
+                       "Catedratico: Ing. Rogger Vasquez\n"
+                       "Ingeniería en Sistemas Computacionales\n"
+                       "Calculadora y Graficadora\n"
+                       "Uso de QProcess para separar tareas\n\n"
+                       "Sugerencias o comentarios a: nestor.bermudez@unitec.edu");
+}

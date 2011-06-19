@@ -9,6 +9,7 @@
 #include <QSettings>
 #include <QFileDialog>
 #include <QProcess>
+#include <QMessageBox>
 
 
 using namespace std;
@@ -55,6 +56,7 @@ private:
     QString reemplazarVars(QString p);
 
 private slots:
+    void on_actionAbout_triggered();
     void on_btgraph_clicked();
     void on_plotter_clicked();
     void on_CE_clicked();
