@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1049</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>SUPER DIRECCIONAMIENTO :P</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>48</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Lugar de Origen</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>172</y>
+          <width>99</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Intervalo de tiempo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="calcular">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>260</y>
+          <width>255</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Calcular ruta mas corta</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="hora">
+        <property name="geometry">
+         <rect>
+          <x>116</x>
+          <y>170</y>
+          <width>149</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>0 a 1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1 a 2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2 a 3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3 a 4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4 a 5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5 a 6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6 a 7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7 a 8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8 a 9</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9 a 10</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10 a 11</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11 a 12</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12 a 13</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13 a 14</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14 a 15</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15 a 16</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 a 17</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17 a 18</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18 a 19</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19 a 20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20 a 21</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21 a 22</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>22 a 23</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>23 a 24</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="lo">
+        <property name="geometry">
+         <rect>
+          <x>116</x>
+          <y>46</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>14</x>
+          <y>8</y>
+          <width>275</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Super Direccionamiento por Dias y Horas</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>138</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Dia de la Semana</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="ruta">
+        <property name="geometry">
+         <rect>
+          <x>14</x>
+          <y>288</y>
+          <width>253</width>
+          <height>167</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>78</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Lugar de Destino</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ld">
+        <property name="geometry">
+         <rect>
+          <x>116</x>
+          <y>76</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="dia">
+        <property name="geometry">
+         <rect>
+          <x>116</x>
+          <y>136</y>
+          <width>149</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Domingo</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lunes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Martes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Miercoles</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Jueves</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Viernes</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sabado</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>36</y>
+          <width>735</width>
+          <height>419</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="dibujar">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>198</y>
+          <width>255</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Dibujar Grafo</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line">
+        <property name="geometry">
+         <rect>
+          <x>16</x>
+          <y>106</y>
+          <width>249</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="current">
+        <property name="geometry">
+         <rect>
+          <x>281</x>
+          <y>10</y>
+          <width>731</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>MATRIZ FLOYD</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>14</x>
+          <y>38</y>
+          <width>727</width>
+          <height>435</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>6</y>
+          <width>85</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Refrescar</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="listWidget">
+        <property name="geometry">
+         <rect>
+          <x>754</x>
+          <y>90</y>
+          <width>256</width>
+          <height>381</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>754</x>
+          <y>66</y>
+          <width>253</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Relaciones entre Lugar y Numero</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1049</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAcciones">
+    <property name="title">
+     <string>Acciones</string>
+    </property>
+    <addaction name="actionCargar_Nodos"/>
+    <addaction name="actionAgregar_Arista"/>
+    <addaction name="actionModificar_Arista"/>
+    <addaction name="actionEliminar_Arista"/>
+    <addaction name="actionSalvar"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Developer"/>
+    <addaction name="actionAbout_QT"/>
+   </widget>
+   <addaction name="menuAcciones"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCargar_Nodos">
+   <property name="text">
+    <string>Cargar Grafo</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionEliminar_Arista">
+   <property name="text">
+    <string>Eliminar Arista</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionAgregar_Arista">
+   <property name="text">
+    <string>Agregar Arista</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+  <action name="actionModificar_Arista">
+   <property name="text">
+    <string>Modificar Arista</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+M</string>
+   </property>
+  </action>
+  <action name="actionAbout_Developer">
+   <property name="text">
+    <string>About Developer</string>
+   </property>
+  </action>
+  <action name="actionAbout_QT">
+   <property name="text">
+    <string>About QT</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar Grafo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
